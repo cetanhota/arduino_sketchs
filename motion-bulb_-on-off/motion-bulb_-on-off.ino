@@ -6,7 +6,7 @@ void setup(){
   pinMode(sensor_pin, INPUT);   // Declared motion sensor pin as Input
   pinMode(relay_pin, OUTPUT);   // Declared relay module pin as Output pin
   // Make the relay module initial state as low, Relay works opposite
-  // had to adjust this code from defaul to HIGH to LOW. 
+  // had to adjust this code from defaul to HIGH to LOW.
   digitalWrite(relay_pin, LOW);
 }
 void loop(){
@@ -23,5 +23,5 @@ void loop(){
     digitalWrite(relay_pin, LOW);
   }
   Serial.println(output);
-  delay(100);
+  delay(5000);
 }
